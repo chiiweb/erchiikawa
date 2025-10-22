@@ -787,6 +787,15 @@
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
+        .timeline-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .timeline-item:hover .timeline-content {
+            box-shadow: 0 15px 25px var(--shadow);
+            background: linear-gradient(135deg, var(--secondary), var(--bg-card));
+        }
+
         .timeline-item.visible {
             opacity: 1;
             transform: translateY(0);
@@ -808,6 +817,7 @@
             box-shadow: 0 10px 20px var(--shadow);
             position: relative;
             border: 3px dashed var(--border);
+            transition: var(--transition);
         }
 
         .timeline-item:nth-child(odd) .timeline-content::after {
@@ -847,6 +857,11 @@
             z-index: 2;
             box-shadow: 0 0 0 6px var(--bg-card);
             border: 3px solid var(--primary-dark);
+            transition: var(--transition);
+        }
+
+        .timeline-dot:hover {
+            transform: translateX(-50%) scale(1.2);
         }
 
         .testimonials-container {
@@ -1407,7 +1422,25 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> aug 2024 - present</p>
                         <h4>sparkly code wizard</h4>
                         <p>@ glitter tech</p>
-                        <p>sprinkled magic on a super cute social media app with react and tailwind css. added twinkly animations that boosted user engagement by 50%!</p>
+                        <p>sprinkled magic on a social media app with react and tailwind css. crafted twinkly animations and optimized performance, boosting user engagement by 50%!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> may 2024</p>
+                        <h4>coding workshop fairy</h4>
+                        <p>@ pastel coding camp</p>
+                        <p>hosted a workshop on react for 30 beginners, teaching them to build a cute to-do app with glittery buttons. everyone left with sparkly smiles!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> mar 2024</p>
+                        <h4>tech talk star</h4>
+                        <p>@ cute code conference</p>
+                        <p>gave a talk on “making web apps adorable with css animations” to 200 devs! shared pastel palette tips and got a standing ovation!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1416,7 +1449,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> aug 2023 - jul 2024</p>
                         <h4>senior sweetheart developer</h4>
                         <p>@ kawaii corp</p>
-                        <p>led a dreamy productivity app with react and glittery css. mentored new devs and added tests that made our code 40% more reliable!</p>
+                        <p>led a dreamy productivity app with react and glittery css. mentored 5 junior devs and added tests, improving code reliability by 40%!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1425,7 +1458,25 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> apr 2023</p>
                         <h4>hackathon hero</h4>
                         <p>@ sparkle code fest</p>
-                        <p>won 1st place in a hackathon by building a pastel-themed note-taking app with vue.js in just 24 hours! it had cute stickers and animations!</p>
+                        <p>won 1st place by building a pastel note-taking app with vue.js in 24 hours! added cute sticker animations that made everyone say “aww”!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> jan 2023</p>
+                        <h4>mentorship fairy</h4>
+                        <p>@ code kitties program</p>
+                        <p>guided 10 aspiring coders in a mentorship program, teaching html, css, and javascript. helped them build their first sparkly portfolios!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> oct 2022</p>
+                        <h4>game jam cutie</h4>
+                        <p>@ kawaii game jam</p>
+                        <p>teamed up to create a 2d platformer game with phaser.js, featuring a bouncing bunny and sparkly stars. won “most adorable” award!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1434,7 +1485,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> jan 2022 - aug 2023</p>
                         <h4>junior pixel artist & coder</h4>
                         <p>@ rainbow tech</p>
-                        <p>turned boring wireframes into adorable interfaces. created a design system that cut dev time by 25% and made users super happy!</p>
+                        <p>turned plain wireframes into adorable interfaces with css magic. created a design system that cut dev time by 25% and delighted users!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1443,7 +1494,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> oct 2021</p>
                         <h4>open-source cutie</h4>
                         <p>@ github glitter community</p>
-                        <p>contributed sparkly css animations to an open-source project for a charity website. my code helped it look 100% cuter!</p>
+                        <p>contributed sparkly css animations to a charity website’s open-source project. my code made it 100% cuter and helped raise donations!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1452,16 +1503,25 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> jun 2021 - dec 2021</p>
                         <h4>frontend intern</h4>
                         <p>@ pastel studio</p>
-                        <p>crafted responsive components and learned accessibility tricks. built my first react library with super cute button animations!</p>
+                        <p>crafted responsive web components with react and learned accessibility best practices. built a library of adorable button animations!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> mar 2021</p>
-                        <h4>side project star</h4>
+                        <h4>mobile app dreamer</h4>
                         <p>@ home sweet code</p>
-                        <p>created a kawaii pet adoption website with javascript and css. it had bouncing puppies and a pastel palette that got tons of love!</p>
+                        <p>developed a kawaii pet adoption mobile app with react native. featured bouncing puppies and a pastel theme that got 1k downloads!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> dec 2020</p>
+                        <h4>blog sparkle writer</h4>
+                        <p>@ tech twinkles blog</p>
+                        <p>wrote a viral post on “5 ways to make your ui kawaii” with tips on pastel colors and animations. got 10k views and tons of love!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1470,7 +1530,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> sep 2018 - may 2022</p>
                         <h4>cute-as-a-button university graduate</h4>
                         <p>@ fuzzy coding school</p>
-                        <p>mastered coding basics and fell in love with pastel palettes. graduated with honors in human-computer interaction!</p>
+                        <p>mastered coding fundamentals and fell in love with pastel ui design. graduated with honors in human-computer interaction!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1479,7 +1539,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> jan 2018 - aug 2018</p>
                         <h4>first coding steps</h4>
                         <p>@ online tutorials & personal projects</p>
-                        <p>started with html and css, building a pink-tastic portfolio that was way too sparkly but super cute!</p>
+                        <p>kicked off with html and css, building a pink-tastic portfolio that was super sparkly and oh-so-cute!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1488,7 +1548,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> mar 2017 - dec 2017</p>
                         <h4>curious code explorer</h4>
                         <p>@ self-taught adventures</p>
-                        <p>discovered coding magic with online courses. built a javascript game with sparkly stars and a dancing unicorn!</p>
+                        <p>discovered coding through free online courses. built a javascript game with sparkly stars and a dancing unicorn!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1497,7 +1557,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> jan 2017 - feb 2017</p>
                         <h4>tiny code dabbler</h4>
                         <p>@ code camp cuteness</p>
-                        <p>joined a beginner bootcamp and made a webpage with a bouncing heart animation. it was love at first code!</p>
+                        <p>joined a beginner bootcamp and created a webpage with a bouncing heart animation. it was love at first code!</p>
                     </div>
                 </div>
             </div>
