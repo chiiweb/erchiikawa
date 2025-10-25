@@ -417,7 +417,7 @@
 
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 2.5rem;
         }
 
@@ -506,7 +506,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 2.5rem;
         }
 
@@ -593,165 +593,6 @@
         }
 
         .project-links {
-            display: flex;
-            gap: 1.2rem;
-        }
-
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 179, 217, 0.9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-            padding: 1.5rem;
-        }
-
-        .modal.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .modal-content {
-            background-color: var(--bg-card);
-            border-radius: 2rem;
-            max-width: 900px;
-            width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 25px 50px -12px rgba(255, 105, 180, 0.5);
-            transform: scale(0.9);
-            opacity: 0;
-            transition: transform 0.4s ease, opacity 0.4s ease;
-            border: 5px dashed var(--border);
-        }
-
-        .modal.active .modal-content {
-            transform: scale(1);
-            opacity: 1;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            background: var(--bg-card);
-            width: 2.8rem;
-            height: 2.8rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 10;
-            border: 3px solid var(--border);
-            transition: var(--transition);
-        }
-
-        .modal-close:hover {
-            transform: rotate(90deg) scale(1.2);
-            background: var(--primary);
-            color: white;
-        }
-
-        .modal-header {
-            padding: 2.5rem 2.5rem 1.5rem;
-            position: relative;
-        }
-
-        .modal-title {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-            color: var(--primary-dark);
-        }
-
-        .modal-subtitle {
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-        }
-
-        .modal-body {
-            padding: 0 2.5rem 2.5rem;
-        }
-
-        .modal-image {
-            border-radius: 1rem;
-            overflow: hidden;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 15px var(--shadow);
-            border: 3px dashed var(--border);
-        }
-
-        .modal-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .modal-details {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .modal-detail h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--primary-dark);
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .modal-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 0.8rem;
-        }
-
-        .modal-description {
-            line-height: 1.8;
-            margin-bottom: 2rem;
-        }
-
-        .modal-features {
-            margin-bottom: 2rem;
-        }
-
-        .modal-features h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--primary-dark);
-        }
-
-        .modal-features ul {
-            padding-left: 1.5rem;
-        }
-
-        .modal-features li {
-            margin-bottom: 0.8rem;
-            position: relative;
-        }
-
-        .modal-features li::before {
-            content: '~';
-            color: var(--primary);
-            position: absolute;
-            left: -1.2rem;
-            font-size: 1.2rem;
-        }
-
-        .modal-links {
             display: flex;
             gap: 1.2rem;
         }
@@ -1161,10 +1002,6 @@
             .contact-container {
                 grid-template-columns: 1fr;
             }
-
-            .modal-details {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 768px) {
@@ -1257,7 +1094,7 @@
                 <a href="#about">about</a>
                 <a href="#skills">skills</a>
                 <a href="#projects">projects</a>
-                <a href="#experience">experience</a>
+                <a href="#journey">coding journey</a>
                 <a href="#contact">contact</a>
             </nav>
             <button class="theme-toggle" aria-label="toggle dark mode">
@@ -1317,6 +1154,7 @@
             <h2 class="section-title">my magical skills ✨</h2>
             <div class="skills-container">
                 <div class="skill-category">
+                    <img src="https://i.pinimg.com/736x/1f/41/bc/1f41bc8d26464498772079f175e7571d.jpg" alt="frontend skills" style="width: 100%; height: 180px; object-fit: cover; border-radius: 1rem; margin-bottom: 1.5rem;">
                     <h3><i class="fas fa-globe"></i> frontend fun</h3>
                     <div class="skill-item">
                         <div class="skill-header"><span>html/css</span><span>95%</span></div>
@@ -1332,6 +1170,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
+                    <img src="https://user-images.githubusercontent.com/104718008/222035606-683b30b3-cd58-4573-80da-8285aa0a5b80.gif" alt="backend skills" style="width: 100%; height: 180px; object-fit: cover; border-radius: 1rem; margin-bottom: 1.5rem;">
                     <h3><i class="fas fa-database"></i> backend bakes</h3>
                     <div class="skill-item">
                         <div class="skill-header"><span>node.js / express</span><span>80%</span></div>
@@ -1346,6 +1185,22 @@
                         <div class="skill-bar"><div class="skill-progress mongo" style="width: 0;"></div></div>
                     </div>
                 </div>
+                <div class="skill-category">
+                    <img src="https://pimg.designhouse.co.kr/cms/contents/direct/info_id/51582/1271306656171.jpg" alt="design skills" style="width: 100%; height: 180px; object-fit: cover; border-radius: 1rem; margin-bottom: 1.5rem;">
+                    <h3><i class="fas fa-paint-brush"></i> design dreams</h3>
+                    <div class="skill-item">
+                        <div class="skill-header"><span>figma / adobe xd</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-progress figma" style="width: 0;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span>ui/ux design</span><span>82%</span></div>
+                        <div class="skill-bar"><div class="skill-progress uiux" style="width: 0;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span>animation magic</span><span>78%</span></div>
+                        <div class="skill-bar"><div class="skill-progress animation" style="width: 0;"></div></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1354,9 +1209,27 @@
         <div class="container animate-on-scroll">
             <h2 class="section-title">my dreamy projects 🎀</h2>
             <div class="projects-grid">
-                <div class="project-card" data-project-id="1">
+                <div class="project-card">
                     <div class="project-image">
-                        <img src="https://i.pinimg.com/736x/5f/ee/ec/5feeeccdea08ec78a88cd885feb1ef7c.jpg" alt="sweet e-commerce shop">
+                        <img src="https://pimg.designhouse.co.kr/cms/contents/direct/info_id/51582/1271306656171.jpg" alt="pastel weather app">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">pastel weather app</h3>
+                        <p class="project-description">a weather application with adorable animations that change based on current conditions!</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">javascript</span>
+                            <span class="tech-tag">api</span>
+                            <span class="tech-tag">css animations</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pastel-weather.netlify.app/" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-link"></i> live demo</a>
+                            <a href="#" class="btn btn-secondary btn-sm" onclick="alert('github link placeholder!')"><i class="fab fa-github"></i> code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://i.pinimg.com/736x/1f/41/bc/1f41bc8d26464498772079f175e7571d.jpg" alt="sweet e-commerce shop">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">sweet e-commerce shop</h3>
@@ -1367,14 +1240,14 @@
                             <span class="tech-tag">stripe</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-primary btn-sm" onclick="alert('demo link placeholder!')"><i class="fas fa-link"></i> live demo</a>
+                            <a href="https://sheepinc.com/" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-link"></i> live demo</a>
                             <a href="#" class="btn btn-secondary btn-sm" onclick="alert('github link placeholder!')"><i class="fab fa-github"></i> code</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-project-id="2">
+                <div class="project-card">
                     <div class="project-image">
-                        <img src="https://i.pinimg.com/736x/5f/ee/ec/5feeeccdea08ec78a88cd885feb1ef7c.jpg" alt="cute task manager">
+                        <img src="https://user-images.githubusercontent.com/104718008/222035606-683b30b3-cd58-4573-80da-8285aa0a5b80.gif" alt="cute task manager">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">cute task manager</h3>
@@ -1385,25 +1258,7 @@
                             <span class="tech-tag">css3</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-primary btn-sm" onclick="alert('demo link placeholder!')"><i class="fas fa-link"></i> live demo</a>
-                            <a href="#" class="btn btn-secondary btn-sm" onclick="alert('github link placeholder!')"><i class="fab fa-github"></i> code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-project-id="3">
-                    <div class="project-image">
-                        <img src="https://i.pinimg.com/736x/5f/ee/ec/5feeeccdea08ec78a88cd885feb1ef7c.jpg" alt="pastel weather app">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">pastel weather app</h3>
-                        <p class="project-description">a weather application with adorable animations that change based on current conditions.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">javascript</span>
-                            <span class="tech-tag">api</span>
-                            <span class="tech-tag">css animations</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-primary btn-sm" onclick="alert('demo link placeholder!')"><i class="fas fa-link"></i> live demo</a>
+                            <a href="https://habitica.com/static/home" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-link"></i> live demo</a>
                             <a href="#" class="btn btn-secondary btn-sm" onclick="alert('github link placeholder!')"><i class="fab fa-github"></i> code</a>
                         </div>
                     </div>
@@ -1412,7 +1267,7 @@
         </div>
     </section>
 
-    <section id="experience">
+    <section id="journey">
         <div class="container animate-on-scroll">
             <h2 class="section-title">my coding journey 🚀</h2>
             <div class="timeline">
@@ -1440,7 +1295,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> mar 2024</p>
                         <h4>tech talk star</h4>
                         <p>@ cute code conference</p>
-                        <p>gave a talk on “making web apps adorable with css animations” to 200 devs! shared pastel palette tips and got a standing ovation!</p>
+                        <p>gave a talk on "making web apps adorable with css animations" to 200 devs! shared pastel palette tips and got a standing ovation!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1458,7 +1313,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> apr 2023</p>
                         <h4>hackathon hero</h4>
                         <p>@ sparkle code fest</p>
-                        <p>won 1st place by building a pastel note-taking app with vue.js in 24 hours! added cute sticker animations that made everyone say “aww”!</p>
+                        <p>won 1st place by building a pastel note-taking app with vue.js in 24 hours! added cute sticker animations that made everyone say "aww"!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1476,7 +1331,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> oct 2022</p>
                         <h4>game jam cutie</h4>
                         <p>@ kawaii game jam</p>
-                        <p>teamed up to create a 2d platformer game with phaser.js, featuring a bouncing bunny and sparkly stars. won “most adorable” award!</p>
+                        <p>teamed up to create a 2d platformer game with phaser.js, featuring a bouncing bunny and sparkly stars. won "most adorable" award!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1494,7 +1349,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> oct 2021</p>
                         <h4>open-source cutie</h4>
                         <p>@ github glitter community</p>
-                        <p>contributed sparkly css animations to a charity website’s open-source project. my code made it 100% cuter and helped raise donations!</p>
+                        <p>contributed sparkly css animations to a charity website's open-source project. my code made it 100% cuter and helped raise donations!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1521,7 +1376,7 @@
                         <p class="timeline-date"><i class="fas fa-calendar-alt"></i> dec 2020</p>
                         <h4>blog sparkle writer</h4>
                         <p>@ tech twinkles blog</p>
-                        <p>wrote a viral post on “5 ways to make your ui kawaii” with tips on pastel colors and animations. got 10k views and tons of love!</p>
+                        <p>wrote a viral post on "5 ways to make your ui kawaii" with tips on pastel colors and animations. got 10k views and tons of love!</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1637,48 +1492,6 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <div class="modal" id="project-modal">
-        <div class="modal-content">
-            <button class="modal-close" id="modal-close-btn"><i class="fas fa-times"></i></button>
-            <div class="modal-header">
-                <h3 class="modal-title">sweet e-commerce shop</h3>
-                <p class="modal-subtitle">full-stack e-commerce solution with custom css!</p>
-            </div>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img src="https://i.pinimg.com/736x/5f/ee/ec/5feeeccdea08ec78a88cd885feb1ef7c.jpg" alt="sweet e-commerce shop">
-                </div>
-                <p class="modal-description">this is where the super detailed, juicy description of the project goes! it was a fun project that taught me so much about cute design and robust backend architecture, focusing on a smooth checkout experience.</p>
-                <div class="modal-details">
-                    <div class="modal-detail">
-                        <h4><i class="fas fa-tools"></i> tech stack used</h4>
-                        <div class="modal-tech">
-                            <span class="tech-tag">react</span>
-                            <span class="tech-tag">node.js</span>
-                            <span class="tech-tag">mongodb</span>
-                        </div>
-                    </div>
-                    <div class="modal-detail">
-                        <h4><i class="fas fa-calendar-alt"></i> completed</h4>
-                        <p>june 2024</p>
-                    </div>
-                </div>
-                <div class="modal-features">
-                    <h4>key features</h4>
-                    <ul>
-                        <li>secure user authentication and registration</li>
-                        <li>stripe integration for payments</li>
-                        <li>fully responsive and super cute mobile design</li>
-                    </ul>
-                </div>
-                <div class="modal-links">
-                    <a href="#" class="btn btn-primary" onclick="alert('demo link placeholder!')">live demo <i class="fas fa-external-link-alt"></i></a>
-                    <a href="#" class="btn btn-secondary" onclick="alert('github link placeholder!')">github <i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
         const navLinks = document.querySelector('.nav-links');
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -1695,17 +1508,10 @@
 
         const themeToggle = document.querySelector('.theme-toggle');
         const body = document.body;
-        const savedTheme = localStorage.getItem('theme');
-
-        if (savedTheme) {
-            body.classList.add(savedTheme);
-            themeToggle.querySelector('i').className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-        }
 
         themeToggle.addEventListener('click', () => {
             body.classList.toggle('dark');
             const isDarkMode = body.classList.contains('dark');
-            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
             themeToggle.querySelector('i').className = isDarkMode ? 'fas fa-sun' : 'fas fa-moon';
         });
 
@@ -1721,7 +1527,10 @@
             'react': '85%',
             'nodejs': '80%',
             'python': '70%',
-            'mongo': '75%'
+            'mongo': '75%',
+            'figma': '88%',
+            'uiux': '82%',
+            'animation': '78%'
         };
 
         let skillsAnimated = false;
@@ -1757,6 +1566,10 @@
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
         });
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            observer.observe(item);
+        });
         
         const backToTopBtn = document.querySelector('.back-to-top');
         window.addEventListener('scroll', () => {
@@ -1778,30 +1591,6 @@
             setTimeout(() => {
                 sparkle.remove();
             }, 3000);
-        });
-
-        const projectCards = document.querySelectorAll('.project-card');
-        const modal = document.getElementById('project-modal');
-        const modalCloseBtn = document.getElementById('modal-close-btn');
-
-        projectCards.forEach(card => {
-            card.addEventListener('click', () => {
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-
-        function closeModal() {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        modalCloseBtn.addEventListener('click', closeModal);
-
-        modal.addEventListener('click', (e) => {
-            if (e.target.id === 'project-modal') {
-                closeModal();
-            }
         });
 
         const testimonials = document.querySelectorAll('.testimonial');
